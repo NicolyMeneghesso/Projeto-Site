@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+    <body>
+<!-- Navegacao -->
+        <nav class="navigation">
+            <div class="navigation-inner site-container">
+                <img id="logo">
+                <div class="main-navigation">
+                    <ul class="main-navigation-ul">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre a Empresa</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li><a href="">Projetos</a></li>
+                        <li><a href="">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div id="btnBurguer" class="burguer-container" onclick="menuFn(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <script>
+                    function menuFn(x) {
+                        x.classList.toggle("change"); 
+                    }
+                </script>
+            </div>
+        </nav>
+
+        <section class="section-top-banner">
+            <div class="top-banner_inner site-container">
+                <div class="top-banner_image">
+                    <img src="./img.png" width="600px">
+                </div>
+                <div class="top-banner_text">
+                    <div class="top-banner_text-up">
+                        <span class="top-banner_span">Olá, Me chamo</span>
+                        <h2 class="top-banner_h2">Nicoly</h2>
+                    </div>
+                    <div class="top-banner_text-down">
+                        <h2 class="top-banner_h2">Meneghesso</h2>
+                        <span class="top-banner_span2">Meu primeiro site</span>
+                    </div>
+                </div>
+                <p>Texto</p>
+                <a href="#" class="a-button">Leia Mais</a>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
