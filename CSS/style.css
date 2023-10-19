@@ -14,20 +14,20 @@
     width: 90%;
 }
 
-.navigation {
+.nav {
     position: absolute;
     width: 100%;
     z-index: 2;
     margin-top: 10px;
 }
 
-.navigation-inner {
+.nav-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.main-navigation {
+.nav-menu {
     color: #fff;
     display: none;
     position: fixed;
@@ -38,7 +38,7 @@
     background: #000;
 }
 
-.main-navigation .main-navigation-ul {
+.nav-menu .nav-menu-list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,14 +49,14 @@
     background-color: #ff69b4;    
 }
 
-.main-navigation .main-navigation-ul li {
+.nav-menu .nav-menu-list li {
     margin-bottom: 20px;
     list-style: none;
     text-align: center;
     font-family: cursive;
 }
 
-.main-navigation .main-navigation-ul a {
+.nav-menu .nav-menu-list a {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -65,17 +65,17 @@
     transition: 0.3s ease;
 }
 
-.main-navigation .main-navigation-ul a:hover {
+.nav-menu .nav-menu-list a:hover {
     color: #FFC0CB;
     }
 
-.burguer-container {
+.menu-toggle {
     cursor: pointer;
     z-index: 3;
     margin-right: 20px;
 }
 
-.bar1, .bar2, .bar3 {
+.line1, .line2, .line3 {
     width: 30px;
     height: 3px;
     background-color: #FF1493;
@@ -83,17 +83,17 @@
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change .line1 {
     transform: rotate(-45deg) translate(-6px, 6px);
     background-color: #FF1493;
 }
 
-.change .bar2 {
+.change .line2 {
     opacity: 0;
     background-color: #FF1493;
 }
 
-.change .bar3 {
+.change .line3 {
     transform: rotate(45deg) translate(-6px, -7px);
     background-color: #FF1493;
 }
@@ -115,7 +115,7 @@
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 .section-top-banner .site-container {
@@ -125,38 +125,64 @@
 
 .top-banner_inner {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
-.top-banner_inner .top-banner_text {
-    margin-left: 50px;
+.top-banner_text {
+    text-align: center;
 }
 
-.top-banner_inner .top-banner_h2 {
+.top-banner_inner .top-banner_span {
     font-size: 50px;
+    font-family: cursive;
     letter-spacing: 3px;
     color: #fff;
+    margin: left;
 }
 
-.top-banner_inner .top-banner_image {
+.top-banner_inner .top-banner_img {
     font-size: 0;
+    opacity: 0.7;
+    background-position: center;
+    background-size: 300px auto;
+    margin-right: 30px; 
+    border: 3px solid #bb5c8f;
 }
 
-.top-banner_text-up {
-
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px auto;
+    z-index: 10; 
+    position: relative;
 }
-
-.a-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #FF1493;
-    border: 1px solid #fff;
-    transition: 0.3s ease;
-}
-
-.a-button:hover, .a-button:focus {
-    color: #FFC0CB;
-}
+ 
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+   
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
