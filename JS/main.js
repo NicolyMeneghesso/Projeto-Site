@@ -4,13 +4,14 @@ $(document).ready(function () {
     })
 });
 
-$(document).ready(function() {
-    var card = $("#myCard");
-    card.on("click", function() {
-        if ($(this).hasClass("flipped")) {
-            $(this).removeClass("flipped");
-        } else {
-            $(this).addClass("flipped");
-        }
-    });
-});
+function flipCard(element) {
+    const innerCard = element.querySelector('.flip-card-inner');
+    if (innerCard.style.transform === 'rotateY(180deg)') {
+        innerCard.style.transform = 'rotateY(0deg)';
+    } else {
+        innerCard.style.transform = 'rotateY(180deg)';
+    }
+}
+
+
+
