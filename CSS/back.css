@@ -1,0 +1,58 @@
+/*Definir padrão para todos elementos, por isso usamos *(asteristico) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site-container {
+    width: 1115px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+    width: 90%;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-banner {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    background-image: url("../img.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container-banner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.85;
+}
+
+.container-banner .site-container {
+    position: relative;
+    z-index: 1;
+}
+
+.banner_inner {
+    display: flex;
+    align-items: center;    
+}

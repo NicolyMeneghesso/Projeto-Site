@@ -1,0 +1,19 @@
+.banner_inner {
+    letter-spacing: 3px;
+    display: flex;
+}
+
+.banner_text h2 {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 10px 0;
+    font: italic 50px 'DejaVu Sans Mono', monospace;;
+    color: #be55be; 
+}
+
+.banner_text p {
+    color: #fff;
+    text-align: justify;
+    font: 15px cursive;
+}

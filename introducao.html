@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+        <link rel="stylesheet" href="css/back.css"/>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/introducao.css"/>
+
+    </head>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        
+        <nav class="nav">
+            <div class="nav-inner site-container">
+                <div class="nav-menu">
+                    <ul class="nav-menu-list">
+                        <li><a href="#parceria">Parceria com Babbage</a></li>
+                        <li><a href="#analitica">Visão Além dos Números</a></li>
+                        <li><a href="#visao">Desafios da Era Vitoriana</a></li>
+                        <li><a href="#legado">Legado e Reconhecimento</a></li>
+                        <li><a href="#inicial">Página Inicial</a></li>
+                    </ul>
+                </div>
+                <div id="btnBurguer" class="menu-toggle" onclick="menuFn(this)">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <script>
+                    function menuFn(x) {
+                        x.classList.toggle("change"); 
+                    }
+                </script>
+            </div>
+        </nav>
+
+        <section class="container-banner" id="introducao"> 
+            <div class="banner_inner site-container">
+                <div class="banner_text">
+                    <div class="banner_title">
+                        <h2>A história da Primeira Programadora</h2>
+                    </div>
+                    <div class="banner_content">
+                        <p>Ada Lovelace, nascida em 1815, é muitas vezes referida como a primeira programadora do mundo. 
+                           Filha do famoso poeta Lord Byron, Ada demonstrou uma paixão precoce pela matemática e pela ciência, algo raro para mulheres de sua época.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
